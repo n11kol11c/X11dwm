@@ -1,5 +1,5 @@
 // lib
-#ifdef _X11_H_ //
+#ifdef _GRUMP_H_ //
 #pragma region lib 
 #pragma endregion
 #include <stdlib.h>                     // General utilities (malloc, free, exit)
@@ -373,4 +373,4 @@ int __cdecl is_wctype(wint_t _C,wctype_t _Type);
 #define EXIT_IF_NULL(ptr) \
     do { if ((ptr) == NULL) { LOG_ERR("Fatal: " #ptr " is NULL"); exit(1); } } while(0)
 
-#endif /* _X11_H_ */
+#endif /* _GRUMP_H_ */
